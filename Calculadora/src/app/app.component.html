@@ -1,0 +1,34 @@
+<div class="w-25 mt-5 mx-auto fw-bold shadow">
+  <div class="w-60  mx-auto text-end bg-light text-secondary">
+      <div class="pb-2 px-3" style="font-size: 25px;">{{ pantalla }}</div>
+      <div class="pb-2 px-3">{{resultado}}</div>
+  </div>
+  <div class="w-60 mx-auto bg-white text-light d-flex flex-row text-center justify-content-between">
+      <div class="col-3">
+          <div class="p-4 bg-secondary"><button (click)="escribir('9')" class="btn btn-secondary">9</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('6')" class="btn btn-secondary">6</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('3')" class="btn btn-secondary">3</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('.')" class="btn btn-secondary">.</button></div>
+      </div>
+      <div class="col-3">
+          <div class="p-4 bg-secondary"><button (click)="escribir('8')" class="btn btn-secondary">8</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('5')" class="btn btn-secondary">5</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('2')" class="btn btn-secondary">2</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('0')" class="btn btn-secondary">0</button></div>
+      </div>
+      <div class="col-3">
+          <div class="p-4 bg-secondary"><button (click)="escribir('7')" class="btn btn-secondary">7</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('4')" class="btn btn-secondary">4</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('1')" class="btn btn-secondary">1</button></div>
+          <div class="p-4 bg-secondary"><button (click)="escribir('00')" class="btn btn-secondary">00</button></div>
+      </div>
+      <div class="col-3 bg-info">
+          <div class="px-3 py-2 bg-info"><button (click)="borrar()" class="btn btn-info text-light">DEL</button></div>
+          <div class="px-3 py-2 bg-info"><button (click)="escribir('/')" class="btn btn-info text-light">/</button></div>
+          <div class="px-3 py-2 bg-info"><button (click)="escribir('x')" class="btn btn-info text-light">X</button></div>
+          <div class="px-3 py-2 bg-info"><button (click)="escribir('-')" class="btn btn-info text-light">-</button></div>
+          <div class="px-3 py-2 bg-info"><button (click)="escribir('+')" class="btn btn-info text-light">+</button></div>
+          <div class="px-3 py-2 bg-info"><button (click)="calcular()"class="btn btn-info text-light">=</button></div>
+      </div>
+  </div>
+</div>
